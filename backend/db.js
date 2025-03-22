@@ -1,8 +1,6 @@
 import mongoose from "mongoose";
 
-mongoose.connect(
-  "mongodb+srv://gulshan63072:u5qBT7na6yG92aT0@kirat.i9fgd.mongodb.net/paytm",
-);
+mongoose.connect(MONGO_DB);
 
 const userSchema = mongoose.Schema({
   userName: String,
