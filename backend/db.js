@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
-
-mongoose.connect(MONGO_DB);
+mongoose.connect(process.env.MONGO_DB);
 
 const userSchema = mongoose.Schema({
   userName: String,
